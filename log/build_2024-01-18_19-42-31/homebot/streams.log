@@ -1,0 +1,31 @@
+[0.481s] Invoking command in '/home/oubre/homebot_ws/build/homebot': PYTHONPATH=/home/oubre/homebot_ws/build/homebot/prefix_override:/home/oubre/homebot_ws/install/homebot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/oubre/homebot_ws/build/homebot/build --no-deps install_data
+[0.675s] running develop
+[0.683s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.683s]   warnings.warn(
+[0.684s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.684s]   warnings.warn(
+[0.730s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[0.730s]   warnings.warn(
+[0.731s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 0.1.43ubuntu1 is an invalid version and will not be supported in a future release
+[0.731s]   warnings.warn(
+[0.824s] running egg_info
+[0.824s] creating homebot.egg-info
+[0.824s] writing homebot.egg-info/PKG-INFO
+[0.824s] writing dependency_links to homebot.egg-info/dependency_links.txt
+[0.824s] writing entry points to homebot.egg-info/entry_points.txt
+[0.824s] writing requirements to homebot.egg-info/requires.txt
+[0.824s] writing top-level names to homebot.egg-info/top_level.txt
+[0.824s] writing manifest file 'homebot.egg-info/SOURCES.txt'
+[0.826s] reading manifest file 'homebot.egg-info/SOURCES.txt'
+[0.826s] writing manifest file 'homebot.egg-info/SOURCES.txt'
+[0.828s] running build_ext
+[0.828s] Creating /home/oubre/homebot_ws/install/homebot/lib/python3.10/site-packages/homebot.egg-link (link to .)
+[0.828s] 
+[0.828s] Installed /home/oubre/homebot_ws/build/homebot
+[0.828s] running install_data
+[0.829s] creating /home/oubre/homebot_ws/install/homebot/share/ament_index
+[0.829s] creating /home/oubre/homebot_ws/install/homebot/share/ament_index/resource_index
+[0.829s] creating /home/oubre/homebot_ws/install/homebot/share/ament_index/resource_index/packages
+[0.829s] copying resource/homebot -> /home/oubre/homebot_ws/install/homebot/share/ament_index/resource_index/packages
+[0.829s] copying package.xml -> /home/oubre/homebot_ws/install/homebot/share/homebot
+[0.849s] Invoked command in '/home/oubre/homebot_ws/build/homebot' returned '0': PYTHONPATH=/home/oubre/homebot_ws/build/homebot/prefix_override:/home/oubre/homebot_ws/install/homebot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/oubre/homebot_ws/build/homebot/build --no-deps install_data

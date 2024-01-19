@@ -1,0 +1,25 @@
+[0.508s] Invoking command in '/home/oubre/homebot_ws/build/homebot': PYTHONPATH=/home/oubre/homebot_ws/build/homebot/prefix_override:/home/oubre/homebot_ws/install/homebot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/oubre/homebot_ws/build/homebot/build --no-deps install_data
+[0.719s] running develop
+[0.719s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.719s]   warnings.warn(
+[0.720s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.720s]   warnings.warn(
+[0.775s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[0.775s]   warnings.warn(
+[0.775s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 0.1.43ubuntu1 is an invalid version and will not be supported in a future release
+[0.775s]   warnings.warn(
+[0.880s] running egg_info
+[0.880s] writing homebot.egg-info/PKG-INFO
+[0.880s] writing dependency_links to homebot.egg-info/dependency_links.txt
+[0.880s] writing entry points to homebot.egg-info/entry_points.txt
+[0.880s] writing requirements to homebot.egg-info/requires.txt
+[0.880s] writing top-level names to homebot.egg-info/top_level.txt
+[0.881s] reading manifest file 'homebot.egg-info/SOURCES.txt'
+[0.882s] writing manifest file 'homebot.egg-info/SOURCES.txt'
+[0.883s] running build_ext
+[0.883s] Creating /home/oubre/homebot_ws/install/homebot/lib/python3.10/site-packages/homebot.egg-link (link to .)
+[0.884s] 
+[0.884s] Installed /home/oubre/homebot_ws/build/homebot
+[0.884s] running install_data
+[0.884s] copying urdf/homebot.urdf.xacro -> /home/oubre/homebot_ws/install/homebot/share/homebot/urdf
+[0.903s] Invoked command in '/home/oubre/homebot_ws/build/homebot' returned '0': PYTHONPATH=/home/oubre/homebot_ws/build/homebot/prefix_override:/home/oubre/homebot_ws/install/homebot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/oubre/homebot_ws/build/homebot/build --no-deps install_data
