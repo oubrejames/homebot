@@ -1,5 +1,10 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:include filename="inertial_macros.xacro" />
+
+    <!-- Colors  -->
+
     <material name="black">
         <color rgba="0 0 0 1"/>
     </material>
@@ -16,16 +21,25 @@
         <color rgba="0 1 0 1"/>
     </material>
 
+    <material name="grey">
+        <color rgba="0.5 0.5 0.5 1"/>
+    </material>
+
+    <!-- Base Link  -->
+
     <link name="base_link">
 
     </link>
 
+    <!-- Chassis Joint  -->
 
     <joint name="chassis_joint" type="fixed">
         <origin xyz="-0.1 0 0" rpy="0 0 0"/>
         <parent link="base_link"/>
         <child link="chassis"/>
     </joint>
+
+    <!-- Chassis Link  -->
 
     <link name="chassis">
         <visual>
@@ -41,5 +55,99 @@
                 <box size="0.3 0.3 0.15"/>
             </geometry>
         </collision>
+        <inertial_box mass="0.5" x="0.3" y="0.3" z="0.15">
+            <origin xyz="0.15 0 0.075" rpy="0 0 0"/>
+        </inertial_box>
     </link>
+
+    <!-- Left Wheel Joint  -->
+
+    <joint name="left_wheel_joint" type="continuous">
+        <origin xyz="0 0.175 0" rpy="-${pi/2} 0 0"/>
+        <parent link="base_link"/>
+        <child link="left_wheel"/>
+        <axis xyz="0 0 1"/>
+    </joint>
+
+    <!-- Left Wheel Link  -->
+
+    <link name="left_wheel">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <cylinder radius="0.05" length="0.05"/>
+            </geometry>
+            <material name="black"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <cylinder radius="0.05" length="0.05"/>
+            </geometry>
+        </collision>
+        <inertial_cylinder mass="0.1" length="0.05" radius="0.05">
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </inertial_cylinder>
+    </link>
+
+    <!-- Right Wheel Joint  -->
+
+    <joint name="right_wheel_joint" type="continuous">
+        <origin xyz="0 -0.175 0" rpy="${pi/2} 0 0"/>
+        <parent link="base_link"/>
+        <child link="right_wheel"/>
+        <axis xyz="0 0 -1"/>
+    </joint>
+
+    <!-- Right Wheel Link  -->
+
+    <link name="right_wheel">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <cylinder radius="0.05" length="0.05"/>
+            </geometry>
+            <material name="black"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <cylinder radius="0.05" length="0.05"/>
+            </geometry>
+        </collision>
+        <inertial_cylinder mass="0.1" length="0.05" radius="0.05">
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </inertial_cylinder>
+    </link>
+
+    <!-- Castor Link  -->
+
+    <link name="castor">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <sphere radius="0.025"/>
+            </geometry>
+            <material name="grey"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <sphere radius="0.025"/>
+            </geometry>
+        </collision>
+        <inertial_sphere mass="0.1" radius="0.025">
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </inertial_sphere>
+    </link>
+
+    <!-- Castor Joint  -->
+
+    <joint name="castor_joint" type="fixed">
+        <origin xyz="0.175 0 -0.025" rpy="0 0 0"/>
+        <parent link="base_link"/>
+        <child link="castor"/>
+    </joint>
+
+
 </robot>

@@ -11,5 +11,6 @@ homebot.egg-info/top_level.txt
 homebot.egg-info/zip-safe
 launch/state_pub.launch.py
 resource/homebot
+rviz/homebot.rviz
 urdf/homebot.urdf.xacro
 urdf/homebot_core.xacro
