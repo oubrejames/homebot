@@ -56,14 +56,17 @@ def generate_launch_description():
         DeclareLaunchArgument(name="use_rviz", default_value="true",
                               description="true (default): start rviz, otherwise don't start rviz"),
 
+        DeclareLaunchArgument(name="use_sim_time", default_value="true",),
+
         Node(package="joint_state_publisher_gui",
              executable="joint_state_publisher_gui",
-             condition= LaunchConfigurationEquals("use_jsp", "gui")
+            #  condition= LaunchConfigurationEquals("use_jsp", "gui"),
+            #  parameters=[{"use_sim_time": LaunchConfiguration("use_sim_time")}],
              ),
-        Node(package="joint_state_publisher",
-             executable="joint_state_publisher",
-             condition= LaunchConfigurationEquals("use_jsp", "jsp")
-             ),
+        # Node(package="joint_state_publisher",
+        #      executable="joint_state_publisher",
+        #      condition= LaunchConfigurationEquals("use_jsp", "jsp")
+        #      ),
         Node(
             package="robot_state_publisher",
             executable="robot_state_publisher",

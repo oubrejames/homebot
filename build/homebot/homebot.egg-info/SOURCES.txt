@@ -14,3 +14,4 @@ resource/homebot
 rviz/homebot.rviz
 urdf/homebot.urdf.xacro
 urdf/homebot_core.xacro
+urdf/inertial_macros.xacro

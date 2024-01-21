@@ -12,7 +12,7 @@ setup(
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name + '/rviz', ['rviz/homebot.rviz']),
         ('share/' + package_name + '/launch', ['launch/state_pub.launch.py']),
-        ('share/' + package_name + '/urdf', ['urdf/homebot.urdf.xacro', 'urdf/homebot_core.xacro']),
+        ('share/' + package_name + '/urdf', ['urdf/homebot.urdf.xacro', 'urdf/homebot_core.xacro', 'urdf/inertial_macros.xacro',]),
 
     ],
     install_requires=['setuptools'],
